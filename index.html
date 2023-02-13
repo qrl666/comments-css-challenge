@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
   <title>CSS Challenge | Interactive comments section</title>
 
@@ -22,39 +23,100 @@
 </head>
 <body>
 
-  <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+  <main>
 
-  <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+      <!-- Comment #1 -->
+    <div class="parent-comment comment">
+      <div class="vote-box">
+        <button class="vote-button upvote">+</button>
+          12
+        <button class="vote-button downvote">-</button>
+      </div>
 
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+    <div class="text-box">
+      <span>
+        <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+        <p class="username">amyrobson</p>
+        1 month ago
+      </span>
+      <p>
+        Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+      </p>
+    </div>
+    </div>
 
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+      <!-- Comment #2 -->
+    <div class="parent-comment comment">
+      <div class="vote-box">
+        <button class="vote-button upvote">+</button>
+          5
+        <button class="vote-button downvote">-</button>
+        </div>
 
+      <div class="text-box">
+      <span>
+        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+        <p class="username">maxblagun</p> 
+        2 weeks ago
+      </span>
+      <p>
+       Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+      </p>
+    </div>
+    </div>
+
+    <article class="replies-article">
+    
+      <!-- Comment #3 (Reply to comment #2) -->
+    <div class="child-comment comment">
+      <div class="vote-box">
+        <button class="vote-button upvote">+</button>
+          4
+        <button class="vote-button downvote">-</button>
+        </div>
+
+      <div class="text-box">
+      <span>
+        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+        <p class="username">ramsesmiron</p> 
+        1 week ago
+      </span>
+      <p>
+        @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+      </p>
+    </div>
+    </div>
+
+     <!-- Comment #4 (Reply to comment #2) -->
+    <div class="child-comment comment">
+     <div class="vote-box">
+      <button class="vote-button upvote">+</button>
+        2
+      <button class="vote-button downvote">-</button>
+      </div>
+
+      <div class="text-box">
+      <span>
+        <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+        <p class="username">juliusomo</p> 
+        2 days ago
+     </span>
+      <p>
+        @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+      </p>
+    </div>
+    </div>
+
+  </article>
+  
+  
+    <div class="attribution">
+        Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Cyril Malle-Barlow</a>.
+    </div>
 
   
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  </main>
 </body>
 </html>

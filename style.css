@@ -1,0 +1,95 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: rgb(184, 219, 251);
+}
+
+.child-comment {
+
+}
+
+.comment {
+    display: flex;
+    padding: 5px;
+    border: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+div {
+
+}
+
+img {
+    vertical-align: middle;
+    height: 44px;
+    width: 44px;
+}
+
+main {
+    display: grid;
+    gap: 10 px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 280px 50px 280px;
+}
+
+p {
+    
+}
+
+.parent-comment {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.replies-article {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    margin-left: 40px;
+    border-left: 3px solid rgb(197, 197, 197);
+    padding-left: 40px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.username {
+    font-weight: bold;
+    display: inline;
+    margin: 10px;
+}
+
+.vote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+    height: 62px;
+    background-color: rgb(220, 220, 248);
+    margin: 10px;
+    border-radius: 13%;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(66, 66, 237);
+    
+}
+
+.vote-button {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    color: rgb(143, 143, 227);
+}
